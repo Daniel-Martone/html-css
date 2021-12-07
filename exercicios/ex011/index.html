@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Aumente e diminua o tamanho do seu navegador para a experiência completa!</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="Foto grande flexivel">
+    </picture>
+
+    <h1>Audios em HTML5</h1>
+    <p>Reproduza o audio abaixo</p>
+    <audio preload="metadata" controls>
+        <source src="midia/North Oakland Extasy - Squadda B.mp3" type="audio/mpeg">
+        <source src="midia/North-Oakland-Extasy-Squadda-B.ogg" type="audio/ogg">
+        <source src="midia/North-Oakland-Extasy-Squadda-B.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não suporta audios <a href="midia/North Oakland Extasy - Squadda B.mp3">clique aqui para baixar a música</a></p>
+        <!-- audio / mpeg(mp4), ogg(ogg), (wav)-->
+        <!-- MP3 WAV OGG funcionam em todos navegadores-->
+    </audio>
+</body>
+
+</html>
